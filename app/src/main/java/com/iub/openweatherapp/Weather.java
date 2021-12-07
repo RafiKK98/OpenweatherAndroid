@@ -49,7 +49,7 @@ public class Weather extends AsyncTask<String, Void, String>{
     protected void onPostExecute(String s){
         super.onPostExecute(s);
         ArrayList<String> temps = new ArrayList<>();
-        ArrayList<Date> dates = new ArrayList<Date>(); // Will update this in the next submission
+        ArrayList<Date> dates = new ArrayList<>(); // Will update this in the next submission
         try {
             JSONObject myObject = new JSONObject(result);
             JSONArray listArray = myObject.getJSONArray("list");
